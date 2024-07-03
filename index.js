@@ -6,7 +6,7 @@ let array = [
   34, 34, 50, 59, 89, 87, 230, 210, 100, 23, 980,
 ];
 
-//a. Sort the numbers from lowest to highest
+//1. a. Sort the numbers from lowest to highest
 function lowestHightest(arr) {
   // copy arr into newArr
   let newArr = arr.slice();
@@ -16,7 +16,7 @@ function lowestHightest(arr) {
 }
 console.log(lowestHightest(array));
 
-//b. Sort the numbers from highest to lowest
+//1. b. Sort the numbers from highest to lowest
 
 function hightestLowest(arr) {
   // copy arr into newArr
@@ -28,7 +28,7 @@ function hightestLowest(arr) {
 console.log(hightestLowest(array));
 
 
-//c. Return an array of unique numbers.
+//1. c. Return an array of unique numbers.
 
 function uniqueArrayGenerator(arr) {
   let newArr = [];
@@ -42,7 +42,7 @@ function uniqueArrayGenerator(arr) {
 console.log(uniqueArrayGenerator(array));
 
 
-//d. Calculate the sum of the numbers in the array referred to in the problem statement
+//1. d. Calculate the sum of the numbers in the array referred to in the problem statement
 
 function sumCalculator(arr) {
   let sum = arr.reduce((count, element) => {
@@ -54,7 +54,7 @@ function sumCalculator(arr) {
 console.log(sumCalculator(array));
 
 
-//e. Return a new array with elements that are less than or equal to 100
+//1. e. Return a new array with elements that are less than or equal to 100
 
 function lessOrEqual100(arr){
   let newArr = [];
@@ -68,7 +68,7 @@ function lessOrEqual100(arr){
 console.log(lessOrEqual100(array));
 
 
-//f. Return a new array with elements that are greater than 50
+//1. f. Return a new array with elements that are greater than 50
 
 function greaterThan50(arr){
   let newArr = [];
@@ -82,7 +82,7 @@ function greaterThan50(arr){
 console.log(greaterThan50(array));
 
 
-//g. Return a new array with elements that are divisible by 2
+//1. g. Return a new array with elements that are divisible by 2
 function divisibleBy2(arr){
   let newArr = [];
   for (let i = 0; i < arr.length; i++){
@@ -95,7 +95,7 @@ function divisibleBy2(arr){
 console.log(divisibleBy2(array));
 
 
-//h. Return a new array with elements that are divisible by 3
+//1. h. Return a new array with elements that are divisible by 3
 function divisibleBy3(arr){
   let newArr = [];
   for (let i = 0; i < arr.length; i++){
@@ -108,7 +108,7 @@ function divisibleBy3(arr){
 console.log(divisibleBy3(array));
 
 
-//i. Return a new array with elements that are neither divisible by 2 or 3, if they exist. Otherwise return an empty array.
+//1. i. Return a new array with elements that are neither divisible by 2 or 3, if they exist. Otherwise return an empty array.
 function divisibleNeither2Or3(arr){
   let newArr = [];
   for (let i = 0; i < arr.length; i++){
@@ -121,18 +121,18 @@ function divisibleNeither2Or3(arr){
 console.log(divisibleNeither2Or3(array));
 
 
-//j. Declare a variable that counts how many elements are in the original array
+//1. j. Declare a variable that counts how many elements are in the original array
 const arrLength = array.length;
 console.log(arrLength);
 
-//k. Declare a new array that contains the same elements as the original array, but reversed. The array should start at 980 and end at 3.
+//1. k. Declare a new array that contains the same elements as the original array, but reversed. The array should start at 980 and end at 3.
 let reversedArr = array.slice().reverse();
 console.log(reversedArr);
 
 // 2. 
 
 let array2 = [7, 10, "Clentan", 13, 89, true, 45, false, "Jerry", "Vukona", "Reabetswe", 600];
-//a. Using a for loop and a variable, return all values that are numbers
+//2. a. Using a for loop and a variable, return all values that are numbers
 function onlyNumbers(arr) {
   let newArr = [];
   for(let i = 0; i <arr.length; i++){
@@ -144,7 +144,7 @@ function onlyNumbers(arr) {
 }
 console.log(onlyNumbers(array2));
 
-//b. Using a while loop and a variable, return all values that are strings
+//2. b. Using a while loop and a variable, return all values that are strings
 function onlyStrings(arr) {
   let newArr = [];
   let i = 0;
@@ -158,7 +158,7 @@ function onlyStrings(arr) {
 }
 console.log(onlyStrings(array2));
 
-//c. Using a do while loop, return the sum of all values in the array
+//2. c. Using a do while loop, return the sum of all values in the array
 
 function sumCalculator2(arr){
   let i = 0;
@@ -175,7 +175,7 @@ function sumCalculator2(arr){
 }
 console.log(sumCalculator2(array2))
 
-//d. Using any looping structure of your choice and a variable, combine all the strings to form a proper greeting that follows the basic English grammar standards. Eg “Hello, Sarah, Thabo, and Mariah.”.
+//2. d. Using any looping structure of your choice and a variable, combine all the strings to form a proper greeting that follows the basic English grammar standards. Eg “Hello, Sarah, Thabo, and Mariah.”.
 
 function greeting(arr){
   let greeting = "Hello";
@@ -189,7 +189,7 @@ function greeting(arr){
 }
 console.log(greeting(array2))
 
-//e. Using any looping structure of your choice and a new variable, remove all values in the array that are strings
+//2. e. Using any looping structure of your choice and a new variable, remove all values in the array that are strings
 function removeStrings(arr){
   let newArr = [];
   for(let i = 0; i < arr.length; i++){
