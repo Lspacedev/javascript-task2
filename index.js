@@ -14,7 +14,7 @@ function lowestHightest(arr) {
 
   return newArr;
 }
-//console.log(lowestHightest(array));
+console.log(lowestHightest(array));
 
 //b. Sort the numbers from highest to lowest
 
@@ -39,7 +39,7 @@ function uniqueArrayGenerator(arr) {
   }
   return newArr;
 }
-//console.log(uniqueArrayGenerator(array));
+console.log(uniqueArrayGenerator(array));
 
 
 //d. Calculate the sum of the numbers in the array referred to in the problem statement
@@ -51,7 +51,7 @@ function sumCalculator(arr) {
 
   return sum;
 }
-//console.log(sumCalculator(array));
+console.log(sumCalculator(array));
 
 
 //e. Return a new array with elements that are less than or equal to 100
@@ -65,7 +65,7 @@ function lessOrEqual100(arr){
   }
   return newArr;
 }
-//console.log(lessOrEqual100(array));
+console.log(lessOrEqual100(array));
 
 
 //f. Return a new array with elements that are greater than 50
@@ -79,8 +79,7 @@ function greaterThan50(arr){
   }
   return newArr;
 }
-
-//console.log(greaterThan50(array));
+console.log(greaterThan50(array));
 
 
 //g. Return a new array with elements that are divisible by 2
@@ -93,7 +92,7 @@ function divisibleBy2(arr){
   }
   return newArr;
 }
-//console.log(divisibleBy2(array));
+console.log(divisibleBy2(array));
 
 
 //h. Return a new array with elements that are divisible by 3
@@ -106,7 +105,7 @@ function divisibleBy3(arr){
   }
   return newArr;
 }
-//console.log(divisibleBy3(array));
+console.log(divisibleBy3(array));
 
 
 //i. Return a new array with elements that are neither divisible by 2 or 3, if they exist. Otherwise return an empty array.
@@ -119,17 +118,16 @@ function divisibleNeither2Or3(arr){
   }
   return newArr;
 }
-
-//console.log(divisibleNeither2Or3(array));
+console.log(divisibleNeither2Or3(array));
 
 
 //j. Declare a variable that counts how many elements are in the original array
 const arrLength = array.length;
-//console.log(arrLength);
+console.log(arrLength);
 
 //k. Declare a new array that contains the same elements as the original array, but reversed. The array should start at 980 and end at 3.
 let reversedArr = array.slice().reverse();
-//console.log(reversedArr);
+console.log(reversedArr);
 
 // 2. 
 
@@ -144,7 +142,7 @@ function onlyNumbers(arr) {
   }
   return newArr;
 }
-//console.log(onlyNumbers(array2));
+console.log(onlyNumbers(array2));
 
 //b. Using a while loop and a variable, return all values that are strings
 function onlyStrings(arr) {
@@ -158,7 +156,7 @@ function onlyStrings(arr) {
   }
   return newArr;
 }
-//console.log(onlyStrings(array2));
+console.log(onlyStrings(array2));
 
 //c. Using a do while loop, return the sum of all values in the array
 
@@ -175,7 +173,7 @@ function sumCalculator2(arr){
   return sum;
 
 }
-//console.log(sumCalculator2(array2))
+console.log(sumCalculator2(array2))
 
 //d. Using any looping structure of your choice and a variable, combine all the strings to form a proper greeting that follows the basic English grammar standards. Eg “Hello, Sarah, Thabo, and Mariah.”.
 
@@ -189,7 +187,7 @@ function greeting(arr){
   }
   return greeting.concat(names).concat(".");
 }
-//console.log(greeting(array2))
+console.log(greeting(array2))
 
 //e. Using any looping structure of your choice and a new variable, remove all values in the array that are strings
 function removeStrings(arr){
@@ -202,61 +200,6 @@ function removeStrings(arr){
   return newArr;
 }
 
-//console.log(removeStrings(array2));
+console.log(removeStrings(array2));
 
 
-
-
-
-
-
-
-
-
-/*function lowestHightest(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    //loop through all numbers that come before the number after the current one arr[i + 1]
-    //the second loop must be less than the current number + 1
-
-    for (let j = 0; j < i + 1; j++) {
-      //compare the number that comes after current one, arr[i + 1], with all the numbers that came before it
-      // if the that number, arr[i + 1], is less than any of the previous numbers, swap their positions
-      
-      if (arr[i + 1] < arr[j]) {
-        
-        let temp = arr[i + 1];
-        arr[i + 1] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
-  newArr = arr;
-  return newArr;
-}
-//console.log(lowestHightest(array));
-
-//b. Sort the numbers from highest to lowest
-
-function hightestLowest(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    //loop through all numbers that come before the number after the current one arr[i + 1]
-    //the second loop must be less than the current number + 1
-
-    for (let j = 0; j < i + 1; j++) {
-      //compare the number that comes after current one, arr[i + 1], with all the numbers that came before it
-      // if the that number, arr[i + 1], is greater than any of the previous numbers, swap their positions
-
-      if (arr[i + 1] > arr[j]) {
-        let temp = arr[i + 1];
-        arr[i + 1] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
-  newArr = arr;
-  return newArr;
-}
-//console.log(hightestLowest(array));
-*/
